@@ -7,13 +7,13 @@
 
   // Foto de portada para cada categoría en la página de inicio
   var PORTADAS = {
-    sillas: 'img/site/galeria-15.jpg',
-    mesas: 'img/site/galeria-09.jpg',
+    sillas: 'img/site/galeria-12.jpg',
+    mesas: 'img/site/galeria-08.jpg',
     infantil: null,
-    manteleria: 'img/site/galeria-04.jpg',
-    cristaleria: 'img/site/intro.jpg',
+    manteleria: 'img/site/galeria-02.jpg',
+    cristaleria: 'img/site/galeria-06.jpg',
     letras: null,
-    complementario: 'img/site/galeria-02.jpg',
+    complementario: 'img/site/galeria-01.jpg',
     especiales: null
   };
 
