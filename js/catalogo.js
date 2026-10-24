@@ -137,11 +137,19 @@ window.SECCIONES = [
   "nota": null,
   "items": [
    {
-    "n": "Mesa rectangular de 8 y mesa de 12 personas LIFETIME",
+    "n": "Mesa rectangular para 8 personas (Lifetime)",
     "i": "img/cat/mesas-mesa-rectangular-de-8-y-mesa-de-12-personas-lifetime.jpg"
    },
    {
-    "n": "Mesa redonda de 10 y mesa de 12 personas LIFETIME",
+    "n": "Mesa rectangular para 12 personas (Lifetime)",
+    "i": "img/cat/mesas-mesa-rectangular-de-8-y-mesa-de-12-personas-lifetime.jpg"
+   },
+   {
+    "n": "Mesa redonda para 10 personas (Lifetime)",
+    "i": "img/cat/mesas-mesa-redonda-de-10-y-mesa-de-12-personas-lifetime.jpg"
+   },
+   {
+    "n": "Mesa redonda para 12 personas (Lifetime)",
     "i": "img/cat/mesas-mesa-redonda-de-10-y-mesa-de-12-personas-lifetime.jpg"
    },
    {

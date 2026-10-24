@@ -273,7 +273,7 @@
   });
 
   // Datos del evento (se recuerdan en este navegador)
-  var CAMPOS = ['nombre', 'fecha', 'lugar', 'tipo', 'entrega', 'comentario'], CLAVE_F = 'dtodo-cotizacion-datos';
+  var CAMPOS = ['nombre', 'fecha', 'lugar', 'tipo', 'entrega'], CLAVE_F = 'dtodo-cotizacion-datos';
   try { var fd = JSON.parse(localStorage.getItem(CLAVE_F)) || {}; CAMPOS.forEach(function (c) { if (fd[c]) $('#' + c).value = fd[c]; }); } catch (e) { /* nada */ }
   CAMPOS.forEach(function (c) { $('#' + c).addEventListener($('#' + c).tagName === 'SELECT' ? 'change' : 'input', function () { var o = {}; CAMPOS.forEach(function (x) { o[x] = $('#' + x).value; }); try { localStorage.setItem(CLAVE_F, JSON.stringify(o)); } catch (e) { /* nada */ } }); });
   function datos() {
@@ -283,7 +283,6 @@
     if ($('#lugar').value.trim()) out.push(['Lugar', $('#lugar').value.trim()]);
     if ($('#tipo').value) out.push(['Tipo de evento', $('#tipo').value]);
     if ($('#entrega').value) out.push(['Transporte o retiro', $('#entrega').value]);
-    if ($('#comentario').value.trim()) out.push(['Comentarios', $('#comentario').value.trim()]);
     return out;
   }
   function mensaje() {
