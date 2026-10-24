@@ -95,9 +95,10 @@
   // Lista de cotización (se guarda en este navegador)
   var CLAVE = 'dtodo-cotizacion';
   var lista = [];
-  try { lista = JSON.parse(localStorage.getItem(CLAVE)) || []; } catch (e) { lista = []; }
+  // La lista empieza vacía cada vez que se abre la página; se borra lo que haya quedado guardado antes
+  try { localStorage.removeItem(CLAVE); localStorage.removeItem('dtodo-cotizacion-datos'); } catch (e) { /* nada */ }
   lista = lista.filter(function (x) { return x && x.k; }).map(function (x) { x.q = Math.max(1, parseInt(x.q, 10) || 1); return x; });
-  function guardar() { try { localStorage.setItem(CLAVE, JSON.stringify(lista)); } catch (e) { /* sin almacenamiento */ } }
+  function guardar() { /* la lista no se guarda entre visitas */ }
   function buscarItem(k) { for (var i = 0; i < lista.length; i++) if (lista[i].k === k) return lista[i]; return null; }
   function cantidad(k) { var x = buscarItem(k); return x ? x.q : 0; }
   var DATOS = {}; // datos de cada artículo por clave
@@ -274,8 +275,7 @@
 
   // Datos del evento (se recuerdan en este navegador)
   var CAMPOS = ['nombre', 'fecha', 'lugar', 'tipo', 'entrega'], CLAVE_F = 'dtodo-cotizacion-datos';
-  try { var fd = JSON.parse(localStorage.getItem(CLAVE_F)) || {}; CAMPOS.forEach(function (c) { if (fd[c]) $('#' + c).value = fd[c]; }); } catch (e) { /* nada */ }
-  CAMPOS.forEach(function (c) { $('#' + c).addEventListener($('#' + c).tagName === 'SELECT' ? 'change' : 'input', function () { var o = {}; CAMPOS.forEach(function (x) { o[x] = $('#' + x).value; }); try { localStorage.setItem(CLAVE_F, JSON.stringify(o)); } catch (e) { /* nada */ } }); });
+  // Los datos del evento tampoco se guardan entre visitas
   function datos() {
     var f = $('#fecha').value, out = [];
     if ($('#nombre').value.trim()) out.push(['Nombre', $('#nombre').value.trim()]);
