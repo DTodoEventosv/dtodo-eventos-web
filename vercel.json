@@ -11,6 +11,6 @@
     { "source": "/contacto", "destination": "/#contacto", "permanent": true }
   ],
   "headers": [
-    { "source": "/img/(.*)", "headers": [{ "key": "Cache-Control", "value": "public, max-age=2592000" }] }
+    { "source": "/img/(.*)", "headers": [{ "key": "Cache-Control", "value": "public, max-age=3600, must-revalidate" }] }
   ]
 }
