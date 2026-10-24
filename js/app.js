@@ -9,7 +9,7 @@
   var PORTADAS = {
     sillas: 'img/site/galeria-12.jpg',
     mesas: 'img/site/galeria-08.jpg',
-    infantil: null,
+    infantil: 'img/site/infantil.jpg',
     manteleria: 'img/site/galeria-02.jpg',
     cristaleria: 'img/site/galeria-06.jpg',
     letras: null,
@@ -69,7 +69,6 @@
       var secs = SECS.filter(function (s) { return s.cat === c.id; });
       var total = secs.reduce(function (a, s) { return a + s.items.length; }, 0);
       var img = PORTADAS[c.id] || (secs[0] && (secs[0].fotos[0] || secs[0].items[0].i));
-      if (c.id === 'infantil') img = secs[0].items[0].i;
       if (c.id === 'letras') img = secs[0].items[1].i;
       if (c.id === 'especiales') img = secs[0].items[secs[0].items.length - 1].i;
       return '<a class="cat-card" href="catalogo.html#' + c.id + '">' +
