@@ -15,7 +15,7 @@
 <link rel="apple-touch-icon" href="img/site/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Figtree:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=League+Spartan:wght@700;800&family=Figtree:wght@400;500;600;700;800&display=swap">
 <style>
 html{color-scheme:light}body{margin:0}img{max-width:100%}[hidden]{display:none!important}
 /* Layout: brand header → sticky category rail → product grids per category → floating "tu lista" bar → quote sheet that sends to WhatsApp */
@@ -186,7 +186,11 @@ main{padding-bottom:120px}
 .sitio-menu{display:none;background:none;border:0;padding:8px;cursor:pointer;color:var(--navy)}
 .sitio-menu svg{width:28px;height:28px}
 @media (max-width:820px){.sitio-menu{display:block}.sitio-nav{position:absolute;top:68px;left:0;right:0;flex-direction:column;align-items:stretch;gap:0;background:#fff;border-bottom:1px solid var(--line);padding:8px 16px 16px;display:none}.sitio-nav.abierto{display:flex}.sitio-nav a{padding:14px 8px;border-radius:8px}.sitio-nav .sitio-wa{text-align:center;margin-top:8px}}
-.top h1{margin-top:4px}
+.cat-hero{background:var(--navy);color:#fff;padding:44px 0 36px;position:relative;overflow:hidden}
+.cat-hero::after{content:"";position:absolute;right:-60px;top:-60px;width:220px;height:220px;background:var(--sun);transform:rotate(45deg)}
+.cat-hero h1{color:#fff;font-family:"League Spartan",var(--body);font-weight:800;font-size:clamp(34px,5vw,52px);line-height:1.1;margin:0;position:relative;z-index:1}
+.cat-hero p{color:rgba(255,255,255,.85);margin:8px 0 0;position:relative;z-index:1;max-width:52ch;font-size:16px}
+@media (max-width:720px){.cat-hero{padding:32px 0 28px}.cat-hero::after{width:110px;height:110px;right:-55px;top:-55px}}
 </style>
 </head>
 <body>
@@ -204,10 +208,10 @@ main{padding-bottom:120px}
     </nav>
   </div>
 </header>
-<div class="top">
+<div class="cat-hero">
   <div class="wrap">
     <h1>Catálogo</h1>
-    <p>Toca <b>“Agregar”</b>, ajusta la cantidad con <b>− / +</b> y envía tu lista por WhatsApp, también en PDF con fotos.</p>
+    <p>Toca <strong>“Agregar”</strong>, ajusta la cantidad con <strong>− / +</strong> y envía tu lista por WhatsApp, también en PDF con fotos.</p>
   </div>
 </div>
 
@@ -263,7 +267,7 @@ const DATA = {"cats":[["sillas","Sillas"],["mesas","Mesas"],["infantil","Infanti
 const WA = "50378747425";
 const $ = s => document.querySelector(s);
 const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
-const IMG = n => "img/cotizar/" + n + ".webp";
+const IMG = n => "img/cotizar/" + n + ".webp?v=2";
 const catName = Object.fromEntries(DATA.cats);
 const byId = Object.fromEntries(DATA.products.map(p => [p.id, p]));
 
