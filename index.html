@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>D'Todo Eventos | Alquiler de mobiliario para eventos en El Salvador</title>
+  <meta name="description" content="Alquiler de sillas, mesas, mantelería, cristalería, toldos y más para bodas, quince años, cumpleaños y eventos empresariales en El Salvador. Santa Tecla, Ciudad Merliot.">
+  <meta property="og:title" content="D'Todo Eventos | Alquileres y más">
+  <meta property="og:description" content="Sillas, mesas, mantelería, cristalería, toldos y más para tu evento.">
+  <meta property="og:image" content="https://www.dtodoeventos.info/img/site/hero.jpg">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#13284a">
+  <link rel="icon" href="img/site/logo-sm.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=League+Spartan:wght@600;700;800&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <header class="header">
+    <div class="contenedor">
+      <a href="index.html" class="logo" aria-label="D'Todo Eventos, inicio"><img src="img/site/logo.png" alt="D'Todo Eventos — Alquileres y más" width="739" height="294"></a>
+      <button class="menu-btn" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+      <nav class="nav" id="nav">
+        <a href="index.html" aria-current="page">Inicio</a>
+        <a href="catalogo.html">Catálogo</a>
+        <a href="index.html#local">Alquiler de local</a>
+        <a href="index.html#contacto">Contacto</a>
+        <a class="btn-wa-mini" href="https://wa.me/50378747425?text=Hola%20D'Todo%20Eventos%2C%20quiero%20cotizar%20para%20mi%20evento" target="_blank" rel="noopener">Cotizar por WhatsApp</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" style="padding:0">
+      <img src="img/site/hero.jpg" alt="Mesas redondas con sillas rattan, mantel beige y montaje de otoño en jardín con vista a la ciudad" fetchpriority="high">
+      <div class="contenedor">
+        <span class="eyebrow">Alquileres y más · El Salvador</span>
+        <h1><span class="l1">Todo para tu evento,</span><span class="l2">en un solo lugar</span></h1>
+        <p>Sillas, mesas, mantelería, cristalería, toldos y más para bodas, quince años, cumpleaños y eventos empresariales.</p>
+        <div class="acciones">
+          <a class="btn btn-amarillo" href="catalogo.html">Ver catálogo completo</a>
+          <a class="btn btn-borde" href="https://wa.me/50378747425?text=Hola%20D'Todo%20Eventos%2C%20quiero%20cotizar%20para%20mi%20evento" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#i-wa"/></svg>Cotizar por WhatsApp</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="franja">
+      <ul class="contenedor">
+        <li>Sillas y mesas</li><li>Mantelería</li><li>Cristalería</li><li>Toldos</li><li>Equipo complementario</li><li>Alquiler de local</li>
+      </ul>
+    </div>
+
+    <section>
+      <div class="contenedor intro">
+        <img src="img/site/intro.jpg" alt="Mesa montada con mantel de limones, copas doradas y servilletas amarillas" loading="lazy">
+        <div>
+          <span class="eyebrow">Quiénes somos</span>
+          <h2>Mobiliario y equipo para que tu evento luzca increíble</h2>
+          <p>Somos una empresa dedicada al alquiler de mobiliario y equipo para eventos. Te ayudamos a armar cada detalle: desde las sillas y la mantelería hasta la cristalería y el equipo complementario.</p>
+          <ul>
+            <li>Sillas Tiffany, Channel y más</li>
+            <li>Más de 150 colores de mantelería</li>
+            <li>Cristalería y vajilla</li>
+            <li>Toldos de varios tamaños</li>
+            <li>Letras con luz y más</li>
+            <li>Local en el Volcán de San Salvador</li>
+          </ul>
+          <a class="btn btn-azul" href="catalogo.html">Explorar el catálogo</a>
+        </div>
+      </div>
+    </section>
+
+    <section style="padding-top:0">
+      <div class="contenedor">
+        <div class="cabecera">
+          <h2 class="pincel">Nuestro catálogo</h2>
+          <p>Elige una categoría para ver todos los artículos disponibles. Puedes armar tu lista y enviarla por WhatsApp para cotizar.</p>
+        </div>
+        <div class="categorias" id="categorias"></div>
+      </div>
+    </section>
+
+    <section class="local" id="local">
+      <div class="contenedor local-grid">
+        <div>
+          <span class="eyebrow">Para tu celebración</span>
+          <h2>Alquiler de local</h2>
+          <p>Una experiencia única para celebraciones sociales y empresariales, rodeada de naturaleza y con vista espectacular.</p>
+          <div class="ubicacion">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>
+            Volcán de San Salvador
+          </div>
+          <div><a class="btn btn-azul" href="https://wa.me/50378747425?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20alquiler%20del%20local%20en%20el%20Volc%C3%A1n%20de%20San%20Salvador" target="_blank" rel="noopener">Consultar disponibilidad</a></div>
+        </div>
+        <div class="local-fotos">
+          <img src="img/site/local-1.jpg" alt="Jardín del local con vista al volcán" loading="lazy">
+          <img src="img/site/local-2.jpg" alt="Montaje de evento en el jardín del local" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="contenedor">
+        <div class="cabecera">
+          <h2 class="pincel">Nuestros montajes</h2>
+          <p>Algunos de los eventos que hemos ambientado.</p>
+        </div>
+        <div class="galeria" id="galeria"></div>
+      </div>
+    </section>
+
+    <section class="contacto" id="contacto">
+      <div class="contenedor">
+        <div class="cabecera">
+          <h2 style="font-size:clamp(1.8rem,4vw,2.6rem)">Contáctanos</h2>
+          <p style="color:rgba(255,255,255,.75)">Escríbenos o llámanos para cotizar tu evento.</p>
+        </div>
+        <div class="contacto-grid">
+          <div class="contacto-card">
+            <h3>Teléfonos</h3>
+            <div class="telefonos">
+              <a href="tel:+50322893031">2289-3031</a>
+              <a href="tel:+50322780942">2278-0942</a>
+              <a href="tel:+50322780020">2278-0020</a>
+              <a href="https://wa.me/50378747425" target="_blank" rel="noopener">7874-7425 (WhatsApp)</a>
+            </div>
+          </div>
+          <div class="contacto-card">
+            <h3>Correo y redes</h3>
+            <a href="mailto:dtodoeventos@gmail.com">dtodoeventos@gmail.com</a>
+            <div class="redes">
+              <a href="https://www.facebook.com/DTodoEventos/" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 8h3V4h-3c-2.8 0-4.5 1.8-4.5 4.6V11H7v4h2.5v7h4v-7H17l.5-4h-4V8.8c0-.5.3-.8.5-.8z"/></svg></a>
+              <a href="https://www.instagram.com/dtodoeventos/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+              <a href="https://wa.me/50378747425" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><use href="#i-wa"/></svg></a>
+            </div>
+            <p style="opacity:.75;font-size:.95rem">@dtodoeventos</p>
+          </div>
+          <div class="contacto-card">
+            <h3>Dirección</h3>
+            <p>Ciudad Merliot, calle Chiltiupán</p>
+            <p>Santa Tecla, La Libertad</p>
+            <a href="https://www.google.com/maps/search/?api=1&query=D%27Todo+Eventos+Ciudad+Merliot+Santa+Tecla" target="_blank" rel="noopener" style="color:var(--amarillo);font-weight:800">Ver en Google Maps →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">D'Todo Eventos · Alquileres y más · <span id="anio"></span></footer>
+
+  <a class="wa-flotante" href="https://wa.me/50378747425?text=Hola%20D'Todo%20Eventos%2C%20quiero%20cotizar%20para%20mi%20evento" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor"><use href="#i-wa"/></svg>
+  </a>
+
+  <div class="visor" id="visor" role="dialog" aria-modal="true" aria-label="Foto ampliada">
+    <button class="cerrar" aria-label="Cerrar">×</button>
+    <button class="prev" aria-label="Anterior">‹</button>
+    <img alt="">
+    <div class="titulo-visor"></div>
+    <button class="next" aria-label="Siguiente">›</button>
+  </div>
+
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-wa" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 2s.8 2.3 1 2.5c.1.2 1.6 2.5 4 3.5 1.5.6 2 .7 2.8.6.4-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.4-.2z"/></symbol>
+  </svg>
+
+  <script src="js/catalogo.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

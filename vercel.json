@@ -1,0 +1,16 @@
+{
+  "cleanUrls": true,
+  "redirects": [
+    { "source": "/inicio", "destination": "/", "permanent": true },
+    { "source": "/Servicios/sillas", "destination": "/catalogo#sillas", "permanent": true },
+    { "source": "/Servicios/mesas", "destination": "/catalogo#mesas", "permanent": true },
+    { "source": "/Servicios/:path(manteler.*)", "destination": "/catalogo#manteleria", "permanent": true },
+    { "source": "/Servicios/:path(cristaler.*)", "destination": "/catalogo#cristaleria", "permanent": true },
+    { "source": "/Servicios/letras-y-luces", "destination": "/catalogo#letras", "permanent": true },
+    { "source": "/Servicios/:path*", "destination": "/catalogo", "permanent": true },
+    { "source": "/contacto", "destination": "/#contacto", "permanent": true }
+  ],
+  "headers": [
+    { "source": "/img/(.*)", "headers": [{ "key": "Cache-Control", "value": "public, max-age=2592000" }] }
+  ]
+}

@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Catálogo | D'Todo Eventos</title>
+  <meta name="description" content="Catálogo completo: sillas, mesas, mantelería, cristalería, toldos y más para bodas, quince años, cumpleaños y eventos empresariales en El Salvador. Santa Tecla, Ciudad Merliot.">
+  <meta property="og:title" content="D'Todo Eventos | Alquileres y más">
+  <meta property="og:description" content="Sillas, mesas, mantelería, cristalería, toldos y más para tu evento.">
+  <meta property="og:image" content="https://www.dtodoeventos.info/img/site/hero.jpg">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#13284a">
+  <link rel="icon" href="img/site/logo-sm.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=League+Spartan:wght@600;700;800&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <header class="header">
+    <div class="contenedor">
+      <a href="index.html" class="logo" aria-label="D'Todo Eventos, inicio"><img src="img/site/logo.png" alt="D'Todo Eventos — Alquileres y más" width="739" height="294"></a>
+      <button class="menu-btn" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+      <nav class="nav" id="nav">
+        <a href="index.html">Inicio</a>
+        <a href="catalogo.html" aria-current="page">Catálogo</a>
+        <a href="index.html#local">Alquiler de local</a>
+        <a href="index.html#contacto">Contacto</a>
+        <a class="btn-wa-mini" href="https://wa.me/50378747425?text=Hola%20D'Todo%20Eventos%2C%20quiero%20cotizar%20para%20mi%20evento" target="_blank" rel="noopener">Cotizar por WhatsApp</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="cat-hero">
+      <div class="contenedor">
+        <h1>Catálogo</h1>
+        <p>Escribe la cantidad que necesitas, toca <strong>“Agregar”</strong> y envía tu lista por WhatsApp para recibir tu cotización.</p>
+      </div>
+    </div>
+    <div class="filtros">
+      <div class="contenedor">
+        <label class="buscador">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+          <input type="search" id="buscar" placeholder="Buscar: Tiffany, dorado, copa…" aria-label="Buscar en el catálogo">
+        </label>
+        <div class="chips" id="chips" role="toolbar" aria-label="Categorías"></div>
+      </div>
+    </div>
+    <div class="contenedor" id="catalogo"></div>
+    <p class="sin-resultados contenedor" id="sin-resultados">No encontramos artículos con esa búsqueda. Escríbenos por WhatsApp y con gusto te ayudamos.</p>
+    <div style="height:110px"></div>
+  </main>
+
+  <div class="cotiza-barra" id="cotiza-barra">
+    <div class="txt"><span id="cotiza-cuenta">0 artículos</span><small>en tu lista de cotización</small></div>
+    <button class="ver" id="ver-lista">Ver lista</button>
+    <button class="enviar" id="enviar-rapido"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#i-wa"/></svg>Enviar</button>
+  </div>
+  <div class="panel-fondo" id="panel-fondo"></div>
+  <div class="panel" id="panel" role="dialog" aria-modal="true" aria-labelledby="panel-titulo">
+    <h2 id="panel-titulo">Tu lista para cotizar</h2>
+    <p class="ayuda">Indica cantidades y los datos de tu evento. Al enviar se abrirá WhatsApp con tu mensaje listo.</p>
+    <ul id="lista"></ul>
+    <label for="fecha">Fecha del evento</label>
+    <input class="campo" type="date" id="fecha">
+    <label for="lugar">Lugar / tipo de evento</label>
+    <input class="campo" type="text" id="lugar" placeholder="Ej. Boda en Santa Tecla, 120 invitados">
+    <label for="comentario">Comentarios</label>
+    <textarea id="comentario" rows="2" placeholder="Algo más que debamos saber"></textarea>
+    <div class="acciones-panel">
+      <button class="btn btn-borde" style="color:var(--azul);box-shadow:inset 0 0 0 2px var(--linea)" id="cerrar-panel">Seguir viendo</button>
+      <button class="btn btn-wa" id="enviar"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#i-wa"/></svg>Enviar por WhatsApp</button>
+    </div>
+    <button class="vaciar" id="vaciar">Vaciar lista</button>
+  </div>
+
+  <footer class="footer">D'Todo Eventos · Alquileres y más · <span id="anio"></span></footer>
+
+  <a class="wa-flotante" href="https://wa.me/50378747425?text=Hola%20D'Todo%20Eventos%2C%20quiero%20cotizar%20para%20mi%20evento" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor"><use href="#i-wa"/></svg>
+  </a>
+
+  <div class="visor" id="visor" role="dialog" aria-modal="true" aria-label="Foto ampliada">
+    <button class="cerrar" aria-label="Cerrar">×</button>
+    <button class="prev" aria-label="Anterior">‹</button>
+    <img alt="">
+    <div class="titulo-visor"></div>
+    <button class="next" aria-label="Siguiente">›</button>
+  </div>
+
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-wa" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 2s.8 2.3 1 2.5c.1.2 1.6 2.5 4 3.5 1.5.6 2 .7 2.8.6.4-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.4-.2z"/></symbol>
+  </svg>
+
+  <script src="js/catalogo.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
