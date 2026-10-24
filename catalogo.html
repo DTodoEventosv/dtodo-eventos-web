@@ -39,7 +39,7 @@
     <div class="cat-hero">
       <div class="contenedor">
         <h1>Catálogo</h1>
-        <p>Escribe la cantidad que necesitas, toca <strong>“Agregar”</strong> y envía tu lista por WhatsApp para recibir tu cotización.</p>
+        <p>Toca <strong>“Agregar”</strong>, ajusta la cantidad con <strong>− / +</strong> y envía tu lista por WhatsApp, también en PDF con fotos.</p>
       </div>
     </div>
     <div class="filtros">
@@ -57,26 +57,34 @@
   </main>
 
   <div class="cotiza-barra" id="cotiza-barra">
-    <div class="txt"><span id="cotiza-cuenta">0 artículos</span><small>en tu lista de cotización</small></div>
-    <button class="ver" id="ver-lista">Ver lista</button>
-    <button class="enviar" id="enviar-rapido"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#i-wa"/></svg>Enviar</button>
+    <div class="txt"><b id="cotiza-piezas">0 piezas</b><small id="cotiza-cuenta">0 artículos en tu lista</small></div>
+    <button class="ver-enviar" id="ver-lista">Ver y enviar</button>
   </div>
   <div class="panel-fondo" id="panel-fondo"></div>
   <div class="panel" id="panel" role="dialog" aria-modal="true" aria-labelledby="panel-titulo">
-    <h2 id="panel-titulo">Tu lista para cotizar</h2>
-    <p class="ayuda">Indica cantidades y los datos de tu evento. Al enviar se abrirá WhatsApp con tu mensaje listo.</p>
-    <ul id="lista"></ul>
-    <label for="fecha">Fecha del evento</label>
-    <input class="campo" type="date" id="fecha">
-    <label for="lugar">Lugar / tipo de evento</label>
-    <input class="campo" type="text" id="lugar" placeholder="Ej. Boda en Santa Tecla, 120 invitados">
-    <label for="comentario">Comentarios</label>
-    <textarea id="comentario" rows="2" placeholder="Algo más que debamos saber"></textarea>
-    <div class="acciones-panel">
-      <button class="btn btn-borde" style="color:var(--azul);box-shadow:inset 0 0 0 2px var(--linea)" id="cerrar-panel">Seguir viendo</button>
-      <button class="btn btn-wa" id="enviar"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#i-wa"/></svg>Enviar por WhatsApp</button>
+    <div class="panel-cab">
+      <h2 id="panel-titulo">Tu lista para cotizar</h2>
+      <button class="x" id="cerrar-x" aria-label="Cerrar">×</button>
     </div>
-    <button class="vaciar" id="vaciar">Vaciar lista</button>
+    <p class="ayuda" id="panel-resumen"></p>
+    <ul id="lista"></ul>
+    <div class="campos">
+      <label>Tu nombre<input class="campo" type="text" id="nombre" autocomplete="name"></label>
+      <label>Fecha del evento<input class="campo" type="date" id="fecha"></label>
+      <label>Lugar o municipio<input class="campo" type="text" id="lugar" placeholder="Ej. Santa Tecla"></label>
+      <label>Tipo de evento<select class="campo" id="tipo"><option value="">Seleccionar</option><option>Boda</option><option>Quince años</option><option>Cumpleaños</option><option>Bautizo / Primera comunión</option><option>Graduación</option><option>Baby shower</option><option>Evento empresarial</option><option>Otro</option></select></label>
+      <label class="full">¿Transporte o retiro?<select class="campo" id="entrega"><option value="">Seleccionar</option><option>Necesito transporte a domicilio</option><option>Retiro en bodega (Ciudad Merliot)</option></select></label>
+      <label class="full">Comentarios<textarea id="comentario" rows="2" placeholder="Horario, entrega a domicilio, colores del evento…"></textarea></label>
+    </div>
+    <div class="acciones-panel">
+      <button class="btn btn-wa btn-pdf" id="enviar-pdf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 13h6M9 17h6"/></svg>Enviar PDF por WhatsApp</button>
+      <button class="btn btn-azul" id="enviar"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#i-wa"/></svg>Enviar como texto</button>
+    </div>
+    <div class="panel-pie">
+      <button class="vaciar" id="ver-pdf">Solo ver el PDF</button>
+      <button class="vaciar" id="vaciar">Vaciar lista</button>
+    </div>
+    <p class="ayuda" style="margin-top:10px">“Enviar PDF por WhatsApp” crea un PDF con las fotos y cantidades de tu lista y lo comparte por WhatsApp al 7874-7425. Si tu equipo no permite compartir archivos, el PDF se descarga y se abre WhatsApp para que lo adjuntes.</p>
   </div>
 
   <footer class="footer">D'Todo Eventos · Alquileres y más · <span id="anio"></span></footer>

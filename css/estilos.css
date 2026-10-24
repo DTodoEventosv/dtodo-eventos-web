@@ -259,24 +259,26 @@ section { padding: 72px 0; }
 .color .foto img { width: 100%; height: 100%; object-fit: cover; max-height: none; }
 .color .cuerpo { padding: 8px 10px 10px; gap: 8px; }
 .color h3 { font-size: .86rem; }
-.color .agregar { font-size: .8rem; }
-
-.pedir { display: flex; gap: 6px; align-items: stretch; }
-.cant {
-  width: 56px; flex: none; font: inherit; font-size: .9rem; font-weight: 700; text-align: center; color: var(--azul);
-  border: 1.5px solid var(--linea); border-radius: 999px; padding: 6px 4px; background: #fff; -moz-appearance: textfield;
-}
-.cant::-webkit-outer-spin-button, .cant::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
-.cant:focus { outline: 2px solid var(--amarillo); border-color: transparent; }
+.color .ctl { margin-top: auto; }
 .agregar {
-  flex: 1;
-  all: unset; cursor: pointer; text-align: center; font-weight: 800; font-size: .82rem;
-  color: var(--azul); background: var(--crema); border-radius: 999px; padding: 8px 6px; white-space: nowrap;
+  all: unset; box-sizing: border-box; cursor: pointer; display: block; width: 100%; text-align: center;
+  font-weight: 800; font-size: .95rem; color: #fff; background: var(--azul); border-radius: 10px; padding: 10px 8px;
   transition: background .15s ease;
 }
-.agregar:hover { background: var(--amarillo-2); }
-.agregar[aria-pressed="true"] { background: var(--azul); color: #fff; }
-.pedir .agregar { flex: 1; }
+.agregar:hover { background: var(--azul-2); }
+.step { display: grid; grid-template-columns: 38px minmax(0, 1fr) 38px; border: 1.5px solid var(--azul); border-radius: 10px; overflow: hidden; background: #fff; }
+.step button { all: unset; cursor: pointer; text-align: center; font-size: 1.2rem; font-weight: 800; color: var(--azul); background: var(--crema); line-height: 38px; }
+.step button:hover { background: var(--amarillo-2); }
+.step input { width: 100%; min-width: 0; border: 0; text-align: center; font: inherit; font-weight: 800; font-size: 1rem; color: var(--azul); background: transparent; padding: 0; -moz-appearance: textfield; font-variant-numeric: tabular-nums; }
+.step input::-webkit-outer-spin-button, .step input::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
+.step input:focus { outline: none; background: #fff8de; }
+.prod .foto { position: relative; }
+.badge { position: absolute; top: 8px; left: 8px; background: var(--amarillo); color: var(--azul); font-weight: 800; font-size: .78rem; border-radius: 999px; padding: 3px 9px; box-shadow: 0 2px 6px rgba(0,0,0,.12); }
+.prod.has { border-color: var(--amarillo); box-shadow: 0 0 0 2px var(--amarillo) inset; }
+.prod .cuerpo { text-align: center; }
+.color .step { grid-template-columns: 30px minmax(0, 1fr) 30px; }
+.color .step button { line-height: 32px; font-size: 1.05rem; }
+.color .agregar { font-size: .84rem; padding: 8px 6px; }
 .agregar:focus-visible, .chip:focus-visible, .prod .foto:focus-visible, .galeria button:focus-visible { outline: 3px solid var(--amarillo); outline-offset: 2px; }
 
 .ambiente { display: flex; gap: 10px; overflow-x: auto; padding: 4px 0 6px; margin-top: 16px; scroll-snap-type: x mandatory; }
@@ -294,8 +296,11 @@ section { padding: 72px 0; }
   display: none; align-items: center; gap: 12px; padding: 10px 10px 10px 18px;
 }
 .cotiza-barra.visible { display: flex; }
-.cotiza-barra .txt { flex: 1; font-weight: 700; font-size: .95rem; line-height: 1.2; }
-.cotiza-barra .txt small { display: block; font-weight: 600; opacity: .75; font-size: .8rem; }
+.cotiza-barra .txt { flex: 1; line-height: 1.25; }
+.cotiza-barra .txt b { display: block; font-size: 1.05rem; }
+.cotiza-barra .txt small { display: block; font-weight: 600; opacity: .75; font-size: .82rem; }
+.cotiza-barra .ver-enviar { background: var(--amarillo); color: var(--azul); font-weight: 800; padding: 12px 18px; border-radius: 12px; white-space: nowrap; }
+.cotiza-barra .ver-enviar:hover { background: var(--amarillo-2); }
 .cotiza-barra button { all: unset; cursor: pointer; }
 .cotiza-barra .ver { font-weight: 800; padding: 10px 12px; border-radius: 12px; color: var(--amarillo); }
 .cotiza-barra .enviar { background: var(--verde-wa); padding: 11px 16px; border-radius: 12px; font-weight: 800; display: flex; align-items: center; gap: 8px; }
@@ -340,3 +345,23 @@ body.con-cotizacion .wa-flotante { display: none; }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; scroll-behavior: auto !important; } }
 
 [hidden] { display: none !important; }
+
+/* Panel de cotización: cabecera, campos y acciones */
+.panel-cab { display: flex; align-items: center; gap: 10px; margin-bottom: 4px; }
+.panel-cab h2 { flex: 1; }
+.panel .x { all: unset; cursor: pointer; width: 36px; height: 36px; border-radius: 50%; background: var(--crema); display: grid; place-items: center; font-size: 1.3rem; color: var(--azul); }
+.panel li { display: grid; grid-template-columns: 48px minmax(0, 1fr) 118px 28px; gap: 10px; }
+.panel li .step { grid-template-columns: 32px minmax(0, 1fr) 32px; }
+.panel li .step button { line-height: 34px; }
+.campos { display: grid; grid-template-columns: 1fr 1fr; gap: 0 12px; }
+.campos label { margin: 10px 0 0; display: flex; flex-direction: column; gap: 6px; }
+.campos .full { grid-column: 1 / -1; }
+@media (max-width: 480px) { .campos { grid-template-columns: 1fr; } .panel li { grid-template-columns: 42px minmax(0, 1fr) 100px 24px; gap: 8px; } }
+.panel .acciones-panel { flex-direction: column; }
+.panel .acciones-panel .btn { width: 100%; }
+.btn-pdf { font-size: 1.02rem; padding: 15px 20px; }
+.btn[disabled] { opacity: .6; cursor: wait; }
+.panel-pie { display: flex; justify-content: space-between; gap: 12px; }
+.toast { position: fixed; left: 50%; bottom: 96px; transform: translateX(-50%); z-index: 120; background: var(--azul); color: #fff; padding: 10px 18px; border-radius: 999px; font-weight: 700; font-size: .92rem; box-shadow: 0 8px 24px rgba(0,0,0,.25); max-width: calc(100% - 32px); text-align: center; }
+.panel li .step input { width: 100%; padding: 0; border: 0; border-radius: 0; font-size: .95rem; }
+.panel select.campo { appearance: none; -webkit-appearance: none; background: #fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%2313284a' stroke-width='2'/%3E%3C/svg%3E") no-repeat right 14px center; padding-right: 36px; font: inherit; color: var(--texto); }
