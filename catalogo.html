@@ -429,6 +429,17 @@ function drawCartLines(){
 }
 document.addEventListener("click", e => { const r = e.target.closest("[data-rm]"); if (r){ setQty(r.dataset.rm, 0); refresh(r.dataset.rm.split("|")[0]); } });
 
+/* De dónde viene el cliente (enlaces de anuncios: ?utm_source=instagram&utm_medium=anuncio) */
+const ORIGEN = (() => {
+  try {
+    const p = new URLSearchParams(location.search);
+    const src = (p.get("utm_source") || p.get("origen") || "").toLowerCase();
+    if (!src) return "";
+    const red = {facebook: "Facebook", fb: "Facebook", instagram: "Instagram", ig: "Instagram", msg: "Messenger", messenger: "Messenger", an: "Facebook", threads: "Threads", whatsapp: "WhatsApp", tiktok: "TikTok", google: "Google"}[src] || src;
+    const med = (p.get("utm_medium") || "").toLowerCase();
+    return (/anuncio|paid|cpc|ads?/.test(med) ? "anuncio de " : "") + red;
+  } catch (e) { return ""; }
+})();
 function message(){
   const L = lineList(); const f = form;
   let m = "Hola D'Todo Eventos, quiero cotizar lo siguiente:";
@@ -446,6 +457,7 @@ function message(){
   }
   if (interestLocal) m += `\n\n*También me interesa el alquiler del local* (Volcán de San Salvador)`;
   
+  if (ORIGEN) m += `\n\n(Vengo de ${ORIGEN})`;
   return m;
 }
 function updateWA(){
@@ -551,7 +563,7 @@ async function sharePDF(btn){
     const doc = await buildPDF(); const blob = doc.output("blob");
     const file = new File([blob], pdfName(), {type: "application/pdf"});
     if (navigator.canShare && navigator.canShare({files: [file]})) {
-      try { await navigator.share({files: [file], title: "Cotización D'Todo Eventos", text: "Hola D'Todo Eventos, les comparto mi lista con fotos para cotizar."}); }
+      try { await navigator.share({files: [file], title: "Cotización D'Todo Eventos", text: "Hola D'Todo Eventos, les comparto mi lista con fotos para cotizar." + (ORIGEN ? " (Vengo de " + ORIGEN + ")" : "")}); }
       catch (e) { if (e && e.name !== "AbortError") { doc.save(pdfName()); } }
     } else {
       doc.save(pdfName());
