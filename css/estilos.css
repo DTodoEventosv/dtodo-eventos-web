@@ -164,14 +164,15 @@ section { padding: 72px 0; }
 /* Local */
 .local { background: var(--crema); }
 .local-grid { display: grid; gap: 32px; align-items: center; }
-.local-fotos { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
-.local-fotos img { border-radius: 50%; aspect-ratio: 1; object-fit: cover; width: 100%; border: 6px solid #fff; box-shadow: var(--sombra); }
-.local-fotos img:last-child { margin-top: 48px; }
+.local-fotos { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.local-fotos img { border-radius: 50%; aspect-ratio: 1; object-fit: cover; width: 100%; border: 8px solid #fff; box-shadow: var(--sombra); }
+.local-fotos img:last-child { margin-top: 90px; }
+@media (max-width: 859px) { .local-fotos { grid-template-columns: 1fr; gap: 0; max-width: 420px; margin: 8px auto 0; } .local-fotos img:first-child { width: 78%; } .local-fotos img:last-child { width: 62%; margin: -70px 0 0 auto !important; } }
 .local h2 { font-family: "Caveat Brush", cursive; font-weight: 400; font-size: clamp(2.6rem, 6vw, 4rem); }
 .local p { color: var(--gris); font-size: 1.08rem; }
 .ubicacion { display: inline-flex; gap: 8px; align-items: center; font-weight: 800; color: var(--azul); margin: 8px 0 24px; }
 .ubicacion svg { width: 22px; height: 22px; color: #e0463a; }
-@media (min-width: 860px) { .local-grid { grid-template-columns: 1.1fr 1fr; gap: 64px; } }
+@media (min-width: 860px) { .local-grid { grid-template-columns: 0.8fr 1.4fr; gap: 48px; } }
 
 /* Galería */
 .galeria { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
