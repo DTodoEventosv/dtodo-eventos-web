@@ -1778,4 +1778,4 @@ window.SECCIONES = [
  }
 ];
 
-window.GALERIA = ["img/site/galeria-01.jpg", "img/site/galeria-02.jpg", "img/site/galeria-03.jpg", "img/site/galeria-04.jpg", "img/site/galeria-05.jpg", "img/site/galeria-06.jpg", "img/site/galeria-07.jpg", "img/site/galeria-08.jpg", "img/site/galeria-09.jpg", "img/site/galeria-10.jpg", "img/site/galeria-11.jpg", "img/site/galeria-12.jpg", "img/site/galeria-13.jpg", "img/site/galeria-14.jpg", "img/site/galeria-15.jpg", "img/site/galeria-16.jpg"];
+window.GALERIA = ["img/site/montaje-01.jpg", "img/site/montaje-02.jpg", "img/site/montaje-03.jpg", "img/site/montaje-04.jpg", "img/site/montaje-05.jpg", "img/site/montaje-06.jpg", "img/site/montaje-07.jpg", "img/site/montaje-08.jpg", "img/site/montaje-09.jpg", "img/site/montaje-10.jpg", "img/site/montaje-11.jpg", "img/site/montaje-12.jpg", "img/site/montaje-13.jpg", "img/site/montaje-14.jpg", "img/site/montaje-15.jpg", "img/site/montaje-16.jpg"];
