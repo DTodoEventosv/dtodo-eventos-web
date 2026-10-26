@@ -12,9 +12,9 @@
     infantil: 'img/site/infantil.jpg',
     manteleria: 'img/site/galeria-02.jpg',
     cristaleria: 'img/site/galeria-06.jpg',
-    letras: null,
+    letras: 'img/site/letras.jpg',
     complementario: 'img/site/galeria-01.jpg',
-    especiales: null
+    especiales: 'img/site/toldos.jpg'
   };
 
   function $(s, el) { return (el || document).querySelector(s); }
@@ -69,8 +69,6 @@
       var secs = SECS.filter(function (s) { return s.cat === c.id; });
       var total = secs.reduce(function (a, s) { return a + s.items.length; }, 0);
       var img = PORTADAS[c.id] || (secs[0] && (secs[0].fotos[0] || secs[0].items[0].i));
-      if (c.id === 'letras') img = secs[0].items[1].i;
-      if (c.id === 'especiales') img = secs[0].items[secs[0].items.length - 1].i;
       return '<a class="cat-card" href="catalogo.html#' + c.id + '">' +
         '<img src="' + src(img) + '" alt="" loading="lazy">' +
         '<span class="cuenta">' + total + ' artículos</span>' +
