@@ -751,7 +751,7 @@ window.SECCIONES = [
     "i": "img/cat/manteleria-rojo-4.jpg"
    },
    {
-    "n": "Rojo",
+    "n": "Rojo intenso",
     "i": "img/cat/manteleria-rojo-5.jpg"
    },
    {
@@ -1029,7 +1029,7 @@ window.SECCIONES = [
     "i": "img/cat/manteleria-verde-esmeralda-3.jpg"
    },
    {
-    "n": "Verde manzano",
+    "n": "Verde manzana",
     "i": "img/cat/manteleria-verde-manzano.jpg"
    },
    {
@@ -1135,7 +1135,7 @@ window.SECCIONES = [
     "i": "img/cat/cristaleria-plato-postre.jpg"
    },
    {
-    "n": "Taza con plato",
+    "n": "Taza con paila",
     "i": "img/cat/cristaleria-taza-con-plato.jpg"
    },
    {
@@ -1290,7 +1290,7 @@ window.SECCIONES = [
     "i": "img/cat/cristaleria-piutter-vidrio-transparente-orilla-dorada.jpg"
    },
    {
-    "n": "Piutter vidrio orilla dorada",
+    "n": "Piutter vidrio perla orilla dorada",
     "i": "img/cat/cristaleria-piutter-vidrio-orilla-dorada.jpg"
    },
    {
@@ -1350,11 +1350,11 @@ window.SECCIONES = [
     "i": "img/cat/cristaleria-piutter-transparente-con-orilla-roja.jpg"
    },
    {
-    "n": "Piutter verde hoja",
+    "n": "Piutter hoja verde",
     "i": "img/cat/cristaleria-piutter-verde-hoja.jpg"
    },
    {
-    "n": "Piutter rojo hoja",
+    "n": "Piutter hoja roja",
     "i": "img/cat/cristaleria-piutter-rojo-hoja.jpg"
    }
   ],
