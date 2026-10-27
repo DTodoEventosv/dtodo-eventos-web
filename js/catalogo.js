@@ -59,43 +59,43 @@ window.SECCIONES = [
     "i": "img/cat/sillas-silla-lifetime.jpg"
    },
    {
-    "n": "Garden Blanca",
+    "n": "Garden blanca",
     "i": "img/cat/sillas-garden-blanca.jpg"
    },
    {
-    "n": "Garden Madera",
+    "n": "Garden madera",
     "i": "img/cat/sillas-garden-madera.jpg"
    },
    {
-    "n": "Silla Rattan",
+    "n": "Silla rattan",
     "i": "img/cat/sillas-silla-rattan.jpg"
    },
    {
-    "n": "Tiffany Dorada",
+    "n": "Tiffany dorada",
     "i": "img/cat/sillas-tiffany-dorada.jpg"
    },
    {
-    "n": "Tiffany Plata",
+    "n": "Tiffany plata",
     "i": "img/cat/sillas-tiffany-plata.jpg"
    },
    {
-    "n": "Tiffany Cristal",
+    "n": "Tiffany cristal",
     "i": "img/cat/sillas-tiffany-cristal.jpg"
    },
    {
-    "n": "Tiffany Chocolate",
+    "n": "Tiffany chocolate",
     "i": "img/cat/sillas-tiffany-chocolate.jpg"
    },
    {
-    "n": "Tiffany Blanca",
+    "n": "Tiffany blanca",
     "i": "img/cat/sillas-tiffany-blanca.jpg"
    },
    {
-    "n": "Tiffany Negra",
+    "n": "Tiffany negra",
     "i": "img/cat/sillas-tiffany-negra.jpg"
    },
    {
-    "n": "Channel Dorada",
+    "n": "Channel dorada",
     "i": "img/cat/sillas-channel-dorada.jpg"
    },
    {
@@ -153,11 +153,11 @@ window.SECCIONES = [
     "i": "img/cat/mesas-mesa-redonda-de-10-y-mesa-de-12-personas-lifetime.jpg"
    },
    {
-    "n": "Mesa coctel alta",
+    "n": "Mesa cóctel alta",
     "i": "img/cat/mesas-mesa-coctel-alta.jpg"
    },
    {
-    "n": "Mesa coctel baja",
+    "n": "Mesa cóctel baja",
     "i": "img/cat/mesas-mesa-coctel-baja.jpg"
    }
   ],
@@ -211,7 +211,7 @@ window.SECCIONES = [
     "i": "img/cat/infantil-silla-plastica-para-nino-de-colores.jpg"
    },
    {
-    "n": "Mesita para niño plástica de colores",
+    "n": "Mesita plástica para niño de colores",
     "i": "img/cat/infantil-mesita-para-nino-plastica-de-colores.jpg"
    }
   ],
@@ -891,16 +891,12 @@ window.SECCIONES = [
     "i": "img/cat/manteleria-cafe-2.jpg"
    },
    {
-    "n": "Dorado fuerte",
+    "n": "Dorado",
     "i": "img/cat/manteleria-dorado-fuerte.jpg"
    },
    {
     "n": "Dorado carpeta",
     "i": "img/cat/manteleria-dorado-carpeta.jpg"
-   },
-   {
-    "n": "Champagne",
-    "i": "img/cat/manteleria-champagne.jpg"
    },
    {
     "n": "Perla carpeta",
@@ -1758,19 +1754,55 @@ window.SECCIONES = [
   "nota": null,
   "items": [
    {
-    "n": "Cabina espejada 2mts alto x 2 de ancho y 1 de fondo",
+    "n": "Cabina espejada 2 m de alto x 2 m de ancho y 1 m de fondo",
     "i": "img/cat/especiales-cabina-espejada-2mts-alto-x-2-de-ancho-y-1-de-fondo.jpg"
    },
    {
-    "n": "Moto vespa roja para sesión de fotos y eventos sociales",
+    "n": "Moto Vespa roja para sesión de fotos y eventos sociales",
     "i": "img/cat/especiales-moto-vespa-roja-para-sesion-de-fotos-y-eventos-sociales.jpg"
    },
    {
-    "n": "Oso de peluche 2 mts",
+    "n": "Oso de peluche 2 m",
     "i": "img/cat/especiales-oso-de-peluche-2-mts.jpg"
    },
    {
-    "n": "Toldos 3x3, 4x4, 5x5 y 6x4",
+    "n": "Toldo 3 × 3 m",
+    "i": "img/cat/especiales-toldos-3x3-4x4-5x5-y-6x4.jpg"
+   },
+   {
+    "n": "Toldo 4 × 4 m",
+    "i": "img/cat/especiales-toldos-3x3-4x4-5x5-y-6x4.jpg"
+   },
+   {
+    "n": "Toldo 5 × 5 m",
+    "i": "img/cat/especiales-toldos-3x3-4x4-5x5-y-6x4.jpg"
+   },
+   {
+    "n": "Toldo 6 × 4 m",
+    "i": "img/cat/especiales-toldos-3x3-4x4-5x5-y-6x4.jpg"
+   },
+   {
+    "n": "Toldo 7 × 7 m",
+    "i": "img/cat/especiales-toldos-3x3-4x4-5x5-y-6x4.jpg"
+   },
+   {
+    "n": "Toldo 7 × 14 m",
+    "i": "img/cat/especiales-toldos-3x3-4x4-5x5-y-6x4.jpg"
+   },
+   {
+    "n": "Toldo 10 × 5 m",
+    "i": "img/cat/especiales-toldos-3x3-4x4-5x5-y-6x4.jpg"
+   },
+   {
+    "n": "Toldo 10 × 30 m",
+    "i": "img/cat/especiales-toldos-3x3-4x4-5x5-y-6x4.jpg"
+   },
+   {
+    "n": "Toldo 15 × 15 m",
+    "i": "img/cat/especiales-toldos-3x3-4x4-5x5-y-6x4.jpg"
+   },
+   {
+    "n": "Toldo 15 × 50 m",
     "i": "img/cat/especiales-toldos-3x3-4x4-5x5-y-6x4.jpg"
    }
   ],
