@@ -48,7 +48,7 @@ button,input,select,textarea{font:inherit;color:inherit}
 @media (max-width:720px){.hero-img{display:none}.top .wrap{grid-template-columns:1fr}}
 
 /* sticky nav */
-.rail{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--bg);border-bottom:1px solid var(--line)}
+.rail{position:sticky;top:68px;z-index:20;background:var(--bg);border-bottom:1px solid var(--line)}
 .rail .wrap{display:flex;gap:10px;align-items:center;padding-block:10px}
 .search{flex:0 0 220px;position:relative}
 .search input{width:100%;border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:9px 14px 9px 36px;font-size:14px}
@@ -61,7 +61,8 @@ button,input,select,textarea{font:inherit;color:inherit}
 
 /* sections */
 main{padding-bottom:120px}
-.sec{padding-top:26px;scroll-margin-top:120px}
+.sec{padding-top:26px;scroll-margin-top:140px}
+@media (max-width:720px){.sec{scroll-margin-top:190px}}
 .sec-h{display:flex;flex-direction:column;align-items:center;gap:6px;margin:0 0 16px;text-align:center}
 .brush{font-family:var(--display);font-weight:400;font-size:32px;line-height:1;color:var(--sun);background:var(--navy);padding:6px 18px 8px;border-radius:4px 14px 6px 12px;transform:rotate(-1.2deg);display:inline-block}
 .sec-h small{color:var(--muted);font-size:13.5px}
@@ -175,7 +176,7 @@ main{padding-bottom:120px}
 .toast{position:fixed;left:50%;bottom:calc(90px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--fg);color:var(--bg);padding:9px 16px;border-radius:999px;font-weight:700;font-size:14px;z-index:60}
 
 /* encabezado del sitio */
-.sitio{background:#fff;border-bottom:1px solid var(--line);position:relative;z-index:22}
+.sitio{background:rgba(255,255,255,.96);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:30}
 .sitio-in{display:flex;align-items:center;justify-content:space-between;height:68px;gap:16px}
 .sitio-logo img{height:46px;width:auto;display:block}
 .sitio-nav{display:flex;gap:4px;align-items:center}
@@ -348,7 +349,7 @@ document.addEventListener("click", e => {
   e.preventDefault(); const t = document.getElementById(a.dataset.c); if (t) t.scrollIntoView({behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth"});
 });
 function spy(){
-  let cur = null; for (const s of document.querySelectorAll(".sec")) if (s.getBoundingClientRect().top < 160) cur = s.id;
+  let cur = null; for (const s of document.querySelectorAll(".sec")) if (s.getBoundingClientRect().top < 240) cur = s.id;
   document.querySelectorAll(".chips a").forEach(a => { const on = a.dataset.c === cur; if (on && !a.classList.contains("on")) a.scrollIntoView({block: "nearest", inline: "center"}); a.classList.toggle("on", on); });
 }
 addEventListener("scroll", spy, {passive: true});

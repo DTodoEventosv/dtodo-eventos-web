@@ -45,6 +45,7 @@ h1, h2, h3 { font-family: "League Spartan", "Nunito Sans", sans-serif; color: va
 .eyebrow { font-size: .78rem; letter-spacing: .14em; text-transform: uppercase; font-weight: 800; color: var(--gris); }
 
 /* ---------- Encabezado ---------- */
+section[id] { scroll-margin-top: 68px; }
 .header {
   position: sticky; top: 0; z-index: 50;
   background: rgba(255, 255, 255, .94);
