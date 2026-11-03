@@ -735,8 +735,12 @@ window.SECCIONES = [
     "i": "img/cat/manteleria-verde-esmeralda-2.jpg"
    },
    {
+    "n": "Verde olivo",
+    "i": "img/cat/manteleria-cubremantel-lino-verde-olivo.jpg"
+   },
+   {
     "n": "Verde Limón",
-    "i": "img/cat/manteleria-verde-limon-2.jpg"
+    "i": "img/cat/manteleria-cubremantel-lino-verde-limon.jpg"
    },
    {
     "n": "Verde Manzana",
@@ -756,7 +760,7 @@ window.SECCIONES = [
    },
    {
     "n": "Vino",
-    "i": "img/cat/manteleria-vino-3.jpg"
+    "i": "img/cat/manteleria-cubremantel-lino-vino.jpg"
    },
    {
     "n": "Naranja",
@@ -793,6 +797,18 @@ window.SECCIONES = [
    {
     "n": "Lila",
     "i": "img/cat/manteleria-lila.jpg"
+   },
+   {
+    "n": "Zapote",
+    "i": "img/cat/manteleria-cubremantel-lino-zapote.jpg"
+   },
+   {
+    "n": "Ivory",
+    "i": "img/cat/manteleria-cubremantel-lino-ivory.jpg"
+   },
+   {
+    "n": "Lila perla",
+    "i": "img/cat/manteleria-cubremantel-lino-lila-perla.jpg"
    }
   ],
   "fotos": [
@@ -812,7 +828,7 @@ window.SECCIONES = [
    },
    {
     "n": "Gris carpeta",
-    "i": "img/cat/manteleria-gris-carpeta.jpg"
+    "i": "img/cat/manteleria-cubremantel-satin-gris-carpeta.jpg"
    },
    {
     "n": "Plata",
@@ -875,6 +891,10 @@ window.SECCIONES = [
     "i": "img/cat/manteleria-naranja-2.jpg"
    },
    {
+    "n": "Naranja tornasol",
+    "i": "img/cat/manteleria-cubremantel-satin-naranja-tornasol.jpg"
+   },
+   {
     "n": "Rosado",
     "i": "img/cat/manteleria-rosado-3.jpg"
    },
@@ -905,6 +925,18 @@ window.SECCIONES = [
    {
     "n": "Perla",
     "i": "img/cat/manteleria-perla.jpg"
+   },
+   {
+    "n": "Vino",
+    "i": "img/cat/manteleria-cubremantel-satin-vino.jpg"
+   },
+   {
+    "n": "Azul negro tornasol",
+    "i": "img/cat/manteleria-cubremantel-satin-azul-negro-tornasol.jpg"
+   },
+   {
+    "n": "Verde manzana",
+    "i": "img/cat/manteleria-cubremantel-satin-verde-manzana.jpg"
    }
   ],
   "fotos": []
