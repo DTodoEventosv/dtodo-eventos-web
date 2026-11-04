@@ -19,7 +19,7 @@ window.CATEGORIAS = [
   {
     "id": "manteleria",
     "nombre": "Mantelería",
-    "desc": "Manteles, cubremanteles, lazos y servilletas"
+    "desc": "Manteles, cubremanteles, laza y servilleta"
   },
   {
     "id": "cristaleria",
@@ -302,6 +302,31 @@ window.SECCIONES = [
    "img/cat/manteleria-ambiente-5.jpg",
    "img/cat/manteleria-ambiente-6.jpg"
   ]
+ },
+ {
+  "cat": "manteleria",
+  "titulo": "Mantel para mesa de 12 y mesa cóctel baja",
+  "tipo": "producto",
+  "nota": null,
+  "items": [
+   {
+    "n": "Mantel rectangular (mesa de 12)",
+    "i": "img/cat/manteleria-mantel-rectangular-mesa-de-12.jpg"
+   },
+   {
+    "n": "Mantel cóctel bajo",
+    "i": "img/cat/manteleria-mantel-coctel-bajo.jpg"
+   },
+   {
+    "n": "Mantel cóctel bajo licra negra",
+    "i": "img/cat/manteleria-mantel-coctel-bajo-licra-negra.jpg"
+   },
+   {
+    "n": "Mantel cóctel bajo licra blanca",
+    "i": "img/cat/manteleria-mantel-coctel-bajo-licra-blanca.jpg"
+   }
+  ],
+  "fotos": []
  },
  {
   "cat": "manteleria",
@@ -943,7 +968,7 @@ window.SECCIONES = [
  },
  {
   "cat": "manteleria",
-  "titulo": "Lazos para silla",
+  "titulo": "Laza para silla",
   "tipo": "color",
   "nota": "El tono en fotografía puede variar ligeramente del tono real.",
   "items": [
@@ -1032,7 +1057,7 @@ window.SECCIONES = [
  },
  {
   "cat": "manteleria",
-  "titulo": "Servilletas",
+  "titulo": "Servilleta de tela",
   "tipo": "color",
   "nota": "El tono en fotografía puede variar ligeramente del tono real.",
   "items": [
@@ -1521,7 +1546,7 @@ window.SECCIONES = [
  },
  {
   "cat": "complementario",
-  "titulo": "Números de mesa y porta servilletas",
+  "titulo": "Números de mesa y porta servilleta",
   "tipo": "producto",
   "nota": null,
   "items": [
@@ -1554,7 +1579,7 @@ window.SECCIONES = [
     "i": "img/cat/decoracion-porta-servilleta-de-yute.jpg"
    },
    {
-    "n": "Porta servilletas dorado",
+    "n": "Porta servilleta dorado",
     "i": "img/cat/decoracion-porta-servilletas-dorado.jpg"
    }
   ],
