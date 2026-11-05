@@ -346,11 +346,25 @@ function refresh(changedPid){
 $("#chips").innerHTML = DATA.cats.map(([id, n]) => `<a href="#${id}" data-c="${id}">${esc(n)}</a>`).join("") + `<a href="#local" data-c="local">Local</a>`;
 document.addEventListener("click", e => {
   const a = e.target.closest(".chips a"); if (!a) return;
-  e.preventDefault(); const t = document.getElementById(a.dataset.c); if (t) t.scrollIntoView({behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth"});
+  e.preventDefault(); const t = document.getElementById(a.dataset.c); if (!t) return;
+  const off = (document.querySelector(".sitio") ? document.querySelector(".sitio").offsetHeight : 0) + document.querySelector(".rail").offsetHeight + 8;
+  const y = t.getBoundingClientRect().top + window.pageYOffset - off;
+  spyLock = Date.now() + 1200; marcar(a.dataset.c);
+  window.scrollTo({top: Math.max(0, y), behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth"});
 });
+let spyLock = 0;
+function marcar(id){
+  const box = document.getElementById("chips");
+  document.querySelectorAll(".chips a").forEach(a => {
+    const on = a.dataset.c === id;
+    if (on && !a.classList.contains("on")) box.scrollTo({left: a.offsetLeft - box.clientWidth / 2 + a.offsetWidth / 2, behavior: "auto"});
+    a.classList.toggle("on", on);
+  });
+}
 function spy(){
+  if (Date.now() < spyLock) return;
   let cur = null; for (const s of document.querySelectorAll(".sec")) if (s.getBoundingClientRect().top < 240) cur = s.id;
-  document.querySelectorAll(".chips a").forEach(a => { const on = a.dataset.c === cur; if (on && !a.classList.contains("on")) a.scrollIntoView({block: "nearest", inline: "center"}); a.classList.toggle("on", on); });
+  marcar(cur);
 }
 addEventListener("scroll", spy, {passive: true});
 
@@ -579,7 +593,7 @@ let tq; $("#q").addEventListener("input", () => { clearTimeout(tq); tq = setTime
 render(); refresh(); spy();
 { const mapa = {letras: "complementario", especiales: "complementario"}; const h0 = location.hash.slice(1); if (mapa[h0]) history.replaceState(null, "", "#" + mapa[h0]); }
 { const mb = document.querySelector(".sitio-menu"), nv = document.getElementById("sitio-nav"); mb.addEventListener("click", () => { const o = nv.classList.toggle("abierto"); mb.setAttribute("aria-expanded", o); }); }
-if (location.hash && document.getElementById(location.hash.slice(1))) setTimeout(() => document.getElementById(location.hash.slice(1)).scrollIntoView(), 50);
+if (location.hash && document.getElementById(location.hash.slice(1))) setTimeout(() => { const t = document.getElementById(location.hash.slice(1)); const off = (document.querySelector(".sitio") ? document.querySelector(".sitio").offsetHeight : 0) + document.querySelector(".rail").offsetHeight + 8; window.scrollTo(0, t.getBoundingClientRect().top + window.pageYOffset - off); }, 80);
 </script>
 </body>
 </html>
