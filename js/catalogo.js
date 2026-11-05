@@ -575,7 +575,7 @@ window.SECCIONES = [
   "nota": "El tono en fotografía puede variar ligeramente del tono real.",
   "items": [
    {
-    "n": "Blanco cuadros",
+    "n": "Blanco cuadros calado",
     "i": "img/cat/manteleria-blanco-cuadros.jpg"
    },
    {
@@ -595,7 +595,7 @@ window.SECCIONES = [
     "i": "img/cat/manteleria-brocado-dorado.jpg"
    },
    {
-    "n": "Dorado organza",
+    "n": "Dorado hilos organza",
     "i": "img/cat/manteleria-dorado-organza.jpg"
    },
    {
@@ -603,7 +603,7 @@ window.SECCIONES = [
     "i": "img/cat/manteleria-yute.jpg"
    },
    {
-    "n": "Café organza",
+    "n": "Cobre organza",
     "i": "img/cat/manteleria-cafe-organza.jpg"
    },
    {
@@ -611,7 +611,7 @@ window.SECCIONES = [
     "i": "img/cat/manteleria-naranja-organza.jpg"
    },
    {
-    "n": "Organza puntos",
+    "n": "Ivory puntos organza",
     "i": "img/cat/manteleria-organza-puntos.jpg"
    },
    {
@@ -627,7 +627,7 @@ window.SECCIONES = [
     "i": "img/cat/manteleria-vino-rayas-organza.jpg"
    },
    {
-    "n": "Fucsia dorado organza",
+    "n": "Fucsia rayado dorado organza",
     "i": "img/cat/manteleria-fucsia-dorado-organza.jpg"
    },
    {
@@ -639,7 +639,7 @@ window.SECCIONES = [
     "i": "img/cat/manteleria-coral-organza.jpg"
    },
    {
-    "n": "Dorado naranja círculos organza",
+    "n": "Coral círculos ivory organza",
     "i": "img/cat/manteleria-dorado-naranja-circulos-organza.jpg"
    },
    {
@@ -651,11 +651,11 @@ window.SECCIONES = [
     "i": "img/cat/manteleria-verde-lineas-organza.jpg"
    },
    {
-    "n": "Verde rayado colores organza",
+    "n": "Verde rayas color organza",
     "i": "img/cat/manteleria-verde-rayado-colores-organza.jpg"
    },
    {
-    "n": "Verde rayado organza",
+    "n": "Verde hilos organza",
     "i": "img/cat/manteleria-verde-rayado-organza.jpg"
    },
    {
@@ -699,7 +699,7 @@ window.SECCIONES = [
     "i": "img/cat/manteleria-gris-organza-con-orilla-satin.jpg"
    },
    {
-    "n": "Café con círculos organza",
+    "n": "Café círculos organza",
     "i": "img/cat/manteleria-cafe-con-circulos-organza.jpg"
    }
   ],
