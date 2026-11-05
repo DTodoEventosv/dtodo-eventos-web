@@ -1196,8 +1196,28 @@ window.SECCIONES = [
     "i": "img/cat/cristaleria-taza-con-plato.jpg"
    },
    {
-    "n": "Bowls",
-    "i": "img/cat/cristaleria-bowls.jpg"
+    "n": "Bowl con orejitas",
+    "i": "img/cat/cristaleria-bowl-orejitas.jpg"
+   },
+   {
+    "n": "Bowl pachitos",
+    "i": "img/cat/cristaleria-bowl-pachitos.jpg"
+   },
+   {
+    "n": "Bowl nuevo",
+    "i": "img/cat/cristaleria-bowl-nuevo.jpg"
+   },
+   {
+    "n": "Bowl Tuxton",
+    "i": "img/cat/cristaleria-bowl-tuxton.jpg"
+   },
+   {
+    "n": "Bowl hondo",
+    "i": "img/cat/cristaleria-bowl-hondo.jpg"
+   },
+   {
+    "n": "Bowl textura",
+    "i": "img/cat/cristaleria-bowl-textura.jpg"
    }
   ],
   "fotos": []
