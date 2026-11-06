@@ -701,6 +701,14 @@ window.SECCIONES = [
    {
     "n": "Café círculos organza",
     "i": "img/cat/manteleria-cafe-con-circulos-organza.jpg"
+   },
+   {
+    "n": "Dorado espiral oro",
+    "i": "img/cat/manteleria-cubremantel-premium-dorado-espiral-oro.jpg"
+   },
+   {
+    "n": "Dorado hojas",
+    "i": "img/cat/manteleria-cubremantel-premium-dorado-hojas.jpg"
    }
   ],
   "fotos": [
@@ -834,6 +842,10 @@ window.SECCIONES = [
    {
     "n": "Lila perla",
     "i": "img/cat/manteleria-cubremantel-lino-lila-perla.jpg"
+   },
+   {
+    "n": "Rosado pastel",
+    "i": "img/cat/manteleria-cubremantel-lino-rosado-pastel.jpg"
    }
   ],
   "fotos": [
@@ -962,6 +974,10 @@ window.SECCIONES = [
    {
     "n": "Verde manzana",
     "i": "img/cat/manteleria-cubremantel-satin-verde-manzana.jpg"
+   },
+   {
+    "n": "Champagne",
+    "i": "img/cat/manteleria-cubremantel-satin-champagne.jpg"
    }
   ],
   "fotos": []
@@ -1255,6 +1271,10 @@ window.SECCIONES = [
    {
     "n": "Plato Buffet verde olivo",
     "i": "img/cat/cristaleria-plato-buffet-verde-olivo.jpg"
+   },
+   {
+    "n": "Plato Buffet hoja café",
+    "i": "img/cat/cristaleria-plato-buffet-hoja-cafe.jpg"
    }
   ],
   "fotos": []
@@ -1433,6 +1453,18 @@ window.SECCIONES = [
    {
     "n": "Piutter hoja roja",
     "i": "img/cat/cristaleria-piutter-rojo-hoja.jpg"
+   },
+   {
+    "n": "Piutter plata círculos",
+    "i": "img/cat/cristaleria-piutter-plata-circulos.jpg"
+   },
+   {
+    "n": "Piutter plata gotas",
+    "i": "img/cat/cristaleria-piutter-plata-gotas.jpg"
+   },
+   {
+    "n": "Piutter dorado liso orilla puntitos",
+    "i": "img/cat/cristaleria-piutter-dorado-liso-orilla-puntitos.jpg"
    }
   ],
   "fotos": []
