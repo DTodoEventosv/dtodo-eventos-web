@@ -1047,6 +1047,82 @@ window.SECCIONES = [
    {
     "n": "Roja",
     "i": "img/cat/manteleria-laza-roja.jpg"
+   },
+   {
+    "n": "Vino organza",
+    "i": "img/cat/manteleria-laza-vino-organza.jpg"
+   },
+   {
+    "n": "Fucsia satín",
+    "i": "img/cat/manteleria-laza-fucsia-satin.jpg"
+   },
+   {
+    "n": "Fucsia",
+    "i": "img/cat/manteleria-laza-fucsia.jpg"
+   },
+   {
+    "n": "Lila",
+    "i": "img/cat/manteleria-laza-lila.jpg"
+   },
+   {
+    "n": "Rosada",
+    "i": "img/cat/manteleria-laza-rosada.jpg"
+   },
+   {
+    "n": "Salmón",
+    "i": "img/cat/manteleria-laza-salmon.jpg"
+   },
+   {
+    "n": "Plata",
+    "i": "img/cat/manteleria-laza-plata.jpg"
+   },
+   {
+    "n": "Gris",
+    "i": "img/cat/manteleria-laza-gris.jpg"
+   },
+   {
+    "n": "Perla",
+    "i": "img/cat/manteleria-laza-perla.jpg"
+   },
+   {
+    "n": "Celeste",
+    "i": "img/cat/manteleria-laza-celeste.jpg"
+   },
+   {
+    "n": "Aqua",
+    "i": "img/cat/manteleria-laza-aqua.jpg"
+   },
+   {
+    "n": "Aqua satín",
+    "i": "img/cat/manteleria-laza-aqua-satin.jpg"
+   },
+   {
+    "n": "Verde organza",
+    "i": "img/cat/manteleria-laza-verde-organza.jpg"
+   },
+   {
+    "n": "Verde limón",
+    "i": "img/cat/manteleria-laza-verde-limon.jpg"
+   },
+   {
+    "n": "Yute",
+    "i": "img/cat/manteleria-laza-yute.jpg"
+   },
+   {
+    "n": "Negra",
+    "i": "img/cat/manteleria-negro-5.jpg"
+   },
+   {
+    "n": "Azul negro",
+    "i": "img/cat/manteleria-azul-negro-6.jpg"
+   },
+   {
+    "n": "Azul negro satín",
+    "i": "img/cat/manteleria-azul-negro-6.jpg"
+   },
+   {
+    "n": "Azul royal",
+    "i": "img/cat/manteleria-azul-royal-4.jpg"
    }
   ],
   "fotos": []
