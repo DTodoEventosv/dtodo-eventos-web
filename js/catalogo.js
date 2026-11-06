@@ -1591,7 +1591,7 @@ window.SECCIONES = [
     "i": "img/cat/decoracion-numeros-para-mesa-madera-1-20.jpg"
    },
    {
-    "n": "Números para mesa madera 1 - 10",
+    "n": "Números para mesa ivory 1 - 10",
     "i": "img/cat/decoracion-numeros-para-mesa-madera-1-10.jpg"
    },
    {
