@@ -989,84 +989,64 @@ window.SECCIONES = [
   "nota": "El tono en fotografía puede variar ligeramente del tono real.",
   "items": [
    {
-    "n": "Yute",
-    "i": "img/cat/manteleria-yute-2.jpg"
-   },
-   {
-    "n": "Plata",
-    "i": "img/cat/manteleria-plata-2.jpg"
-   },
-   {
-    "n": "Plata fuerte",
-    "i": "img/cat/manteleria-plata-fuerte.jpg"
-   },
-   {
-    "n": "Dorado",
-    "i": "img/cat/manteleria-dorado-3.jpg"
+    "n": "Dorado fuerte",
+    "i": "img/cat/manteleria-laza-dorado-fuerte.jpg"
    },
    {
     "n": "Dorado oro",
-    "i": "img/cat/manteleria-dorado-oro.jpg"
+    "i": "img/cat/manteleria-laza-dorado-oro.jpg"
+   },
+   {
+    "n": "Dorado suave",
+    "i": "img/cat/manteleria-laza-dorado-suave.jpg"
+   },
+   {
+    "n": "Dorado brocada",
+    "i": "img/cat/manteleria-laza-dorado-brocada.jpg"
    },
    {
     "n": "Champagne",
-    "i": "img/cat/manteleria-champagne-2.jpg"
+    "i": "img/cat/manteleria-laza-champagne.jpg"
    },
    {
-    "n": "Perla",
-    "i": "img/cat/manteleria-perla-2.jpg"
+    "n": "Champagne oscuro",
+    "i": "img/cat/manteleria-laza-champagne-oscuro.jpg"
    },
    {
-    "n": "Salmón",
-    "i": "img/cat/manteleria-salmon-4.jpg"
+    "n": "Dorada con diseño",
+    "i": "img/cat/manteleria-laza-dorada-con-diseno.jpg"
    },
    {
-    "n": "Naranja",
-    "i": "img/cat/manteleria-naranja-3.jpg"
+    "n": "Dorado organza",
+    "i": "img/cat/manteleria-laza-dorado-organza.jpg"
    },
    {
-    "n": "Dorado Organza",
-    "i": "img/cat/manteleria-dorado-organza-2.jpg"
+    "n": "Camino dorado",
+    "i": "img/cat/manteleria-laza-camino-dorado.jpg"
    },
    {
-    "n": "Azul Negro",
-    "i": "img/cat/manteleria-azul-negro-6.jpg"
+    "n": "Camino plata",
+    "i": "img/cat/manteleria-laza-camino-plata.jpg"
    },
    {
-    "n": "Azul Royal",
-    "i": "img/cat/manteleria-azul-royal-4.jpg"
+    "n": "Amarilla",
+    "i": "img/cat/manteleria-laza-amarilla.jpg"
    },
    {
-    "n": "Aqua lino",
-    "i": "img/cat/manteleria-aqua-lino.jpg"
+    "n": "Amarilla satín",
+    "i": "img/cat/manteleria-laza-amarilla-satin.jpg"
    },
    {
-    "n": "Aqua satín",
-    "i": "img/cat/manteleria-aqua-satin.jpg"
-   },
-   {
-    "n": "Morado Lila",
-    "i": "img/cat/manteleria-morado-lila.jpg"
-   },
-   {
-    "n": "Rosado",
-    "i": "img/cat/manteleria-rosado-4.jpg"
-   },
-   {
-    "n": "Fucsia",
-    "i": "img/cat/manteleria-fucsia-4.jpg"
-   },
-   {
-    "n": "Verde tornasol",
-    "i": "img/cat/manteleria-verde-tornasol-2.jpg"
-   },
-   {
-    "n": "Verde manzana",
-    "i": "img/cat/manteleria-verde-manzana-2.jpg"
+    "n": "Naranja satín",
+    "i": "img/cat/manteleria-laza-naranja-satin.jpg"
    },
    {
     "n": "Naranja organza",
-    "i": "img/cat/manteleria-naranja-organza-2.jpg"
+    "i": "img/cat/manteleria-laza-naranja-organza.jpg"
+   },
+   {
+    "n": "Roja",
+    "i": "img/cat/manteleria-laza-roja.jpg"
    }
   ],
   "fotos": []
