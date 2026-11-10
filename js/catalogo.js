@@ -984,6 +984,26 @@ window.SECCIONES = [
  },
  {
   "cat": "manteleria",
+  "titulo": "Camino de mesa",
+  "tipo": "color",
+  "nota": "El tono en fotografía puede variar ligeramente del tono real.",
+  "items": [
+   {
+    "n": "Verde salvia",
+    "i": "img/cat/manteleria-camino-de-mesa-verde-salvia.jpg"
+   },
+   {
+    "n": "Rojo óxido",
+    "i": "img/cat/manteleria-camino-de-mesa-rojo-oxido.jpg"
+   },
+   {
+    "n": "Celeste cielo",
+    "i": "img/cat/manteleria-camino-de-mesa-celeste-cielo.jpg"
+   }
+  ]
+ },
+ {
+  "cat": "manteleria",
   "titulo": "Laza para silla",
   "tipo": "color",
   "nota": "El tono en fotografía puede variar ligeramente del tono real.",
