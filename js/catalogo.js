@@ -1017,14 +1017,6 @@ window.SECCIONES = [
     "i": "img/cat/manteleria-laza-dorado-oro.jpg"
    },
    {
-    "n": "Dorado suave",
-    "i": "img/cat/manteleria-laza-dorado-suave.jpg"
-   },
-   {
-    "n": "Dorado brocada",
-    "i": "img/cat/manteleria-laza-dorado-brocada.jpg"
-   },
-   {
     "n": "Champagne",
     "i": "img/cat/manteleria-laza-champagne.jpg"
    },
@@ -1049,11 +1041,11 @@ window.SECCIONES = [
     "i": "img/cat/manteleria-laza-camino-plata.jpg"
    },
    {
-    "n": "Amarilla",
+    "n": "Mostaza",
     "i": "img/cat/manteleria-laza-amarilla.jpg"
    },
    {
-    "n": "Amarilla satín",
+    "n": "Mostaza satín",
     "i": "img/cat/manteleria-laza-amarilla-satin.jpg"
    },
    {
@@ -1089,6 +1081,10 @@ window.SECCIONES = [
     "i": "img/cat/manteleria-laza-rosada.jpg"
    },
    {
+    "n": "Rosado satín",
+    "i": "img/cat/manteleria-laza-rosado-satin.jpg"
+   },
+   {
     "n": "Salmón",
     "i": "img/cat/manteleria-laza-salmon.jpg"
    },
@@ -1097,12 +1093,12 @@ window.SECCIONES = [
     "i": "img/cat/manteleria-laza-plata.jpg"
    },
    {
-    "n": "Gris",
-    "i": "img/cat/manteleria-laza-gris.jpg"
-   },
-   {
     "n": "Perla",
     "i": "img/cat/manteleria-laza-perla.jpg"
+   },
+   {
+    "n": "Perla satín",
+    "i": "img/cat/manteleria-laza-perla-satin.jpg"
    },
    {
     "n": "Celeste",
