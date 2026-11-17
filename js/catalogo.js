@@ -989,15 +989,15 @@ window.SECCIONES = [
   "nota": "El tono en fotografía puede variar ligeramente del tono real.",
   "items": [
    {
-    "n": "Verde salvia",
+    "n": "Verde",
     "i": "img/cat/manteleria-camino-de-mesa-verde-salvia.jpg"
    },
    {
-    "n": "Rojo óxido",
+    "n": "Terracota",
     "i": "img/cat/manteleria-camino-de-mesa-rojo-oxido.jpg"
    },
    {
-    "n": "Celeste cielo",
+    "n": "Celeste",
     "i": "img/cat/manteleria-camino-de-mesa-celeste-cielo.jpg"
    }
   ]
