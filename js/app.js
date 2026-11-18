@@ -13,8 +13,11 @@
     manteleria: 'img/site/galeria-02.jpg',
     cristaleria: 'img/site/galeria-06.jpg',
     letras: 'img/site/letras.jpg',
+    numeros: 'img/cat/decoracion-numeros-para-mesa-acrilico-transparente-1-20.jpg',
+    pastel: 'img/cat/cristaleria-base-para-pastel-dorado.jpg',
     complementario: 'img/site/galeria-01.jpg',
-    especiales: 'img/site/toldos.jpg'
+    toldos: 'img/site/toldos.jpg',
+    especiales: 'img/cat/especiales-cabina-espejada-2mts-alto-x-2-de-ancho-y-1-de-fondo.jpg'
   };
 
   function $(s, el) { return (el || document).querySelector(s); }

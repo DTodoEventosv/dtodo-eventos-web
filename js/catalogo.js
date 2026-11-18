@@ -9,7 +9,12 @@ window.CATEGORIAS = [
   {
     "id": "mesas",
     "nombre": "Mesas",
-    "desc": "Rectangulares, redondas y de coctel"
+    "desc": "Rectangulares, redondas, de coctel, de postre y bar"
+  },
+  {
+    "id": "numeros",
+    "nombre": "Números de mesa",
+    "desc": "Acrílico, portarretrato y madera"
   },
   {
     "id": "infantil",
@@ -19,7 +24,7 @@ window.CATEGORIAS = [
   {
     "id": "manteleria",
     "nombre": "Mantelería",
-    "desc": "Manteles, cubremanteles, laza y servilleta"
+    "desc": "Manteles, cubremanteles, laza, forro y servilleta"
   },
   {
     "id": "cristaleria",
@@ -27,9 +32,14 @@ window.CATEGORIAS = [
     "desc": "Cubiertos, platos, copas, piutters y buffet"
   },
   {
+    "id": "pastel",
+    "nombre": "Base para pastel",
+    "desc": "Dorada, plata y madera"
+  },
+  {
     "id": "letras",
-    "nombre": "Letras y luces",
-    "desc": "LOVE, Happy Birthday, luces italianas"
+    "nombre": "Letras, luces y buzón",
+    "desc": "LOVE, Happy Birthday, número 15, luces italianas, buzón"
   },
   {
     "id": "complementario",
@@ -37,9 +47,14 @@ window.CATEGORIAS = [
     "desc": "Mamparas, faroles, centros de mesa, salas lounge"
   },
   {
+    "id": "toldos",
+    "nombre": "Toldos",
+    "desc": "Desde 3 × 3 m hasta 15 × 50 m"
+  },
+  {
     "id": "especiales",
-    "nombre": "Toldos y especiales",
-    "desc": "Toldos, cabina espejada, vespa y más"
+    "nombre": "Artículos especiales",
+    "desc": "Cabina espejada, vespa, oso de peluche"
   }
 ];
 
@@ -159,6 +174,18 @@ window.SECCIONES = [
    {
     "n": "Mesa cóctel baja",
     "i": "img/cat/mesas-mesa-coctel-baja.jpg"
+   },
+   {
+    "n": "Mesa para postre (madera o blanca)",
+    "i": "img/cat/decoracion-mesa-para-postre-madera-o-blanca.jpg"
+   },
+   {
+    "n": "Mesita para postre",
+    "i": "img/cat/decoracion-mesita-para-postre.jpg"
+   },
+   {
+    "n": "Mesa Bar",
+    "i": "img/cat/decoracion-mesa-bar.jpg"
    }
   ],
   "fotos": [
@@ -166,6 +193,38 @@ window.SECCIONES = [
    "img/cat/mesas-ambiente-2.jpg",
    "img/cat/mesas-ambiente-3.jpg",
    "img/cat/mesas-ambiente-4.jpg"
+  ]
+ },
+ {
+  "cat": "numeros",
+  "titulo": "Números de mesa",
+  "tipo": "producto",
+  "nota": null,
+  "items": [
+   {
+    "n": "Números para mesa acrílico transparente 1 - 20",
+    "i": "img/cat/decoracion-numeros-para-mesa-acrilico-transparente-1-20.jpg"
+   },
+   {
+    "n": "Números para mesa acrílico dorado 1 - 15",
+    "i": "img/cat/decoracion-numeros-para-mesa-acrilico-dorado-1-15.jpg"
+   },
+   {
+    "n": "Números para mesa portarretrato plata 1 - 30",
+    "i": "img/cat/decoracion-numeros-para-mesa-portarretrato-plata-1-30.jpg"
+   },
+   {
+    "n": "Números para mesa portarretrato dorado 1 - 30",
+    "i": "img/cat/decoracion-numeros-para-mesa-portarretrato-dorado-1-30.jpg"
+   },
+   {
+    "n": "Números para mesa madera 1 - 20",
+    "i": "img/cat/decoracion-numeros-para-mesa-madera-1-20.jpg"
+   },
+   {
+    "n": "Números para mesa ivory 1 - 10",
+    "i": "img/cat/decoracion-numeros-para-mesa-madera-1-10.jpg"
+   }
   ]
  },
  {
@@ -1145,6 +1204,18 @@ window.SECCIONES = [
  },
  {
   "cat": "manteleria",
+  "titulo": "Forro para silla",
+  "tipo": "producto",
+  "nota": null,
+  "items": [
+   {
+    "n": "Forro para silla",
+    "i": "img/cat/manteleria-forro.jpg"
+   }
+  ]
+ },
+ {
+  "cat": "manteleria",
   "titulo": "Servilleta de tela",
   "tipo": "color",
   "nota": "El tono en fotografía puede variar ligeramente del tono real.",
@@ -1605,24 +1676,12 @@ window.SECCIONES = [
     "i": "img/cat/cristaleria-base-postre-metal-dorado.jpg"
    },
    {
-    "n": "Base para pastel dorado",
-    "i": "img/cat/cristaleria-base-para-pastel-dorado.jpg"
-   },
-   {
-    "n": "Base para pastel plata",
-    "i": "img/cat/cristaleria-base-para-pastel-plata.jpg"
-   },
-   {
     "n": "Cafetera 40 tazas",
     "i": "img/cat/cristaleria-cafetera-40-tazas.jpg"
    },
    {
     "n": "Cafetera 100 tazas",
     "i": "img/cat/cristaleria-cafetera-100-tazas.jpg"
-   },
-   {
-    "n": "Base para pastel madera",
-    "i": "img/cat/cristaleria-base-para-pastel-madera.jpg"
    },
    {
     "n": "Cupcake stand",
@@ -1634,6 +1693,26 @@ window.SECCIONES = [
    }
   ],
   "fotos": []
+ },
+ {
+  "cat": "pastel",
+  "titulo": "Base para pastel",
+  "tipo": "producto",
+  "nota": null,
+  "items": [
+   {
+    "n": "Base para pastel dorado",
+    "i": "img/cat/cristaleria-base-para-pastel-dorado.jpg"
+   },
+   {
+    "n": "Base para pastel plata",
+    "i": "img/cat/cristaleria-base-para-pastel-plata.jpg"
+   },
+   {
+    "n": "Base para pastel madera",
+    "i": "img/cat/cristaleria-base-para-pastel-madera.jpg"
+   }
+  ]
  },
  {
   "cat": "letras",
@@ -1664,40 +1743,20 @@ window.SECCIONES = [
    {
     "n": "Letras con luz Mr & Mrs",
     "i": "img/cat/letras-letras-con-luz-mr-mrs.jpg"
+   },
+   {
+    "n": "Buzón dorado y plata",
+    "i": "img/cat/decoracion-buzon-dorado-y-plata.jpg"
    }
   ],
   "fotos": []
  },
  {
   "cat": "complementario",
-  "titulo": "Números de mesa y porta servilleta",
+  "titulo": "Porta servilleta",
   "tipo": "producto",
   "nota": null,
   "items": [
-   {
-    "n": "Números para mesa acrílico transparente 1 - 20",
-    "i": "img/cat/decoracion-numeros-para-mesa-acrilico-transparente-1-20.jpg"
-   },
-   {
-    "n": "Números para mesa acrílico dorado 1 - 15",
-    "i": "img/cat/decoracion-numeros-para-mesa-acrilico-dorado-1-15.jpg"
-   },
-   {
-    "n": "Números para mesa portarretrato plata 1 - 30",
-    "i": "img/cat/decoracion-numeros-para-mesa-portarretrato-plata-1-30.jpg"
-   },
-   {
-    "n": "Números para mesa portarretrato dorado 1 - 30",
-    "i": "img/cat/decoracion-numeros-para-mesa-portarretrato-dorado-1-30.jpg"
-   },
-   {
-    "n": "Números para mesa madera 1 - 20",
-    "i": "img/cat/decoracion-numeros-para-mesa-madera-1-20.jpg"
-   },
-   {
-    "n": "Números para mesa ivory 1 - 10",
-    "i": "img/cat/decoracion-numeros-para-mesa-madera-1-10.jpg"
-   },
    {
     "n": "Porta servilleta de yute",
     "i": "img/cat/decoracion-porta-servilleta-de-yute.jpg"
@@ -1724,10 +1783,6 @@ window.SECCIONES = [
     "i": "img/cat/decoracion-mampara-3d.jpg"
    },
    {
-    "n": "Mesita para postre",
-    "i": "img/cat/decoracion-mesita-para-postre.jpg"
-   },
-   {
     "n": "Arco de corazón",
     "i": "img/cat/decoracion-arco-de-corazon.jpg"
    },
@@ -1752,10 +1807,6 @@ window.SECCIONES = [
   "tipo": "producto",
   "nota": null,
   "items": [
-   {
-    "n": "Mesa Bar",
-    "i": "img/cat/decoracion-mesa-bar.jpg"
-   },
    {
     "n": "Sombrilla",
     "i": "img/cat/decoracion-sombrilla.jpg"
@@ -1843,10 +1894,6 @@ window.SECCIONES = [
     "i": "img/cat/decoracion-candelabro-vinedo.jpg"
    },
    {
-    "n": "Buzón dorado y plata",
-    "i": "img/cat/decoracion-buzon-dorado-y-plata.jpg"
-   },
-   {
     "n": "Centro de mesa redondo",
     "i": "img/cat/decoracion-centro-de-mesa-redondo.jpg"
    },
@@ -1918,10 +1965,6 @@ window.SECCIONES = [
     "i": "img/cat/decoracion-sala-lounge.jpg"
    },
    {
-    "n": "Mesa para postre (madera o blanca)",
-    "i": "img/cat/decoracion-mesa-para-postre-madera-o-blanca.jpg"
-   },
-   {
     "n": "Sala Rattan",
     "i": "img/cat/decoracion-sala-rattan.jpg"
    }
@@ -1929,23 +1972,11 @@ window.SECCIONES = [
   "fotos": []
  },
  {
-  "cat": "especiales",
-  "titulo": "Toldos y artículos especiales",
+  "cat": "toldos",
+  "titulo": "Toldos",
   "tipo": "producto",
   "nota": null,
   "items": [
-   {
-    "n": "Cabina espejada 2 m de alto x 2 m de ancho y 1 m de fondo",
-    "i": "img/cat/especiales-cabina-espejada-2mts-alto-x-2-de-ancho-y-1-de-fondo.jpg"
-   },
-   {
-    "n": "Moto Vespa roja para sesión de fotos y eventos sociales",
-    "i": "img/cat/especiales-moto-vespa-roja-para-sesion-de-fotos-y-eventos-sociales.jpg"
-   },
-   {
-    "n": "Oso de peluche 2 m",
-    "i": "img/cat/especiales-oso-de-peluche-2-mts.jpg"
-   },
    {
     "n": "Toldo 3 × 3 m",
     "i": "img/cat/especiales-toldos-3x3-4x4-5x5-y-6x4.jpg"
@@ -1985,6 +2016,26 @@ window.SECCIONES = [
    {
     "n": "Toldo 15 × 50 m",
     "i": "img/cat/especiales-toldos-3x3-4x4-5x5-y-6x4.jpg"
+   }
+  ]
+ },
+ {
+  "cat": "especiales",
+  "titulo": "Artículos especiales",
+  "tipo": "producto",
+  "nota": null,
+  "items": [
+   {
+    "n": "Cabina espejada 2 m de alto x 2 m de ancho y 1 m de fondo",
+    "i": "img/cat/especiales-cabina-espejada-2mts-alto-x-2-de-ancho-y-1-de-fondo.jpg"
+   },
+   {
+    "n": "Moto Vespa roja para sesión de fotos y eventos sociales",
+    "i": "img/cat/especiales-moto-vespa-roja-para-sesion-de-fotos-y-eventos-sociales.jpg"
+   },
+   {
+    "n": "Oso de peluche 2 m",
+    "i": "img/cat/especiales-oso-de-peluche-2-mts.jpg"
    }
   ],
   "fotos": []
