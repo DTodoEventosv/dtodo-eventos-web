@@ -1639,6 +1639,10 @@ window.SECCIONES = [
     "i": "img/cat/cristaleria-bufeteras.jpg"
    },
    {
+    "n": "Bufetera redonda",
+    "i": "img/cat/cristaleria-bufetera-redonda.jpg"
+   },
+   {
     "n": "Panera acero inoxidable",
     "i": "img/cat/cristaleria-panera-acero-inoxidable.jpg"
    },
